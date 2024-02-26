@@ -1,0 +1,151 @@
+/* SELELTOR APLICAR EM TODOS ELEMENTOS OS ESTILOS
+
+-> * {
+
+}
+
+Class => Seria como um CEP, usam os mesmo cep porém o número cada um tem o seu (Usa-se o .)
+ID=> Só pode ser usado por um único elemento, somente um. (Usa-se o #)
+
+*/
+
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital@1 & display=swap');
+
+h1 {
+    color: red;
+    background: black;
+    font-size: 20px;
+    text-shadow: 10px 10px 10px #FF0000
+}
+p {
+    color:rgb(28, 211, 44);
+    background:yellow;
+    font-size: 20px;
+    font-style: italic;
+    
+}
+button {
+    
+    background: green;
+    border-color: darkgreen;
+}
+
+
+    #titulo {
+        color: red;
+        font-size: 55px;
+
+    }
+
+    /* CSS - FOLHA DE ESTILO EM CASCATA 
+    Dado este nome porque os estilos sempre serão aplicados de cima para baixo
+    Em caso de duplicar estilos, no inspencionar do chrome aparece o estilo cortando mostrando que tem outro 
+    com mesmo estilo. Facilita na identificação do erro.
+
+    CORES - Formas de representar cores
+
+                                 R ,G ,B
+    RGB - vai de 0 a 255 ex: rgb(255,0,0) rgb(124,100,80)
+
+    Hexadecimal
+
+        UNIDADES DE MEDIDAS
+
+        -> ABSOLUTAS
+            px (pixels) 1/100 polegadas
+            in (inches/polegadas)
+            cm/mm (centímetro, milímetro)
+
+        -> RELATIVAS ( Bastante usado para responsividade , adpatação em variadas telas)
+            % - calcula o tamanho realativo ao elemento pai
+            vw - (view width) 1 vw é 1% da largura da janela do navegador
+            vh - (view height) 1 vh é 1% da altura da janela do navegador
+            em - é uma unidade relativa ao elemento pai - emphemeral unit - unidade transitório
+            rem - é uma unidade relativa ao elemento pai
+            google fonts -> Usado para escolher a fonte para o projeto
+
+
+            Fontes - TEXTO
+            font-size - tamanho da fonte
+
+            font-weigth: largura(grossura) da fonte de 0 a 900
+
+            font-family: @import url('https://fonts.googleapis.com/css2? family= Roboto:ital@1 & display=swap');
+            fonte importada pelo google fonts
+            
+            font-style: italic; 
+    
+            line-height: Espaçamento das linhas 
+            
+            letter-spacing: Espaçamento entre uma letra e outra
+            
+            word-spacing: Espaçamento entre as palavras
+            
+            text-align: Alinhamento do Texto
+            
+            text-transform: Transforma todo texto
+                - uppercase : Todo texto maiúsculo
+                - lowercase: Todo texto minúsculo
+                - captalize: Somente a primeira letra maiúscula
+            
+            text-decoration:   
+                - underline: aplica em todo texto
+                - overline: aplica uma linha em cima do texto
+            
+            text-shadow - Sombra no texto
+            EX: text-shadow: 10px 10px 10px #FF0000
+                    primeiro parâmetro - sombra na horizontal
+                    segundo  - sombra na vertical
+                    terceiro - o quanto vai ser esfumaçada
+                    quarto - cor da sombra
+    */
+
+    /*
+    MARGIN E PADDING
+
+    PADDING -> Expande de dentro para fora
+    MARGIN -> Distancia entre os elementos
+    Pode configurar o tamanho para cada lado também
+    top - encima
+    bottom - enbaixo
+    right - direita 
+    left - esquerda
+
+    Aplicando diferentes tamanhos pelo atalho do relógio
+                12h  15h  18h  21h (Sentido do relógio) 
+    EX: margin: 10px 50px 30px 5px
+        Outros Atalhos
+            Ex: margin: 10px 20px 50px (Neste caso ele aplica o primeiro encima, o segundo nos lados e embaixo)
+            EX: margin: 10px 50px (Aplica o primeiro encima e embaixo e o segundo nos lados)
+    
+    */
+    
+    .box {
+
+        width: 50px;
+        height: 50px;
+        background: #FF1493;
+        margin: 20px;
+        padding: 50px;
+
+    }
+
+    .box2 {
+
+        width: 50px;
+        height: 50px;
+        background: #FF1253;
+        margin: 20px;
+
+
+    }
+    
+    /* BOX_SIZING
+
+    box-sizing: content-box; (Conforme adicionando elementos ele soma o tamanho da box
+    box-sizing: border-box: (Conforme adidionando elementos ele sempre mantém o tamanho da box delimitada)
+    BORDER-BOX : Sempre mantém o tamanho do widht e do height, é sempre o mais usado!
+
+    */
+
+   
